@@ -1,6 +1,7 @@
 #ifndef NEXUSPOOL_CONFIG_TYPES_HPP
 #define NEXUSPOOL_CONFIG_TYPES_HPP
 
+#include <cstdint>
 #include <string>
 #include <variant>
 

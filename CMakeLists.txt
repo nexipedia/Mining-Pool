@@ -18,6 +18,7 @@ endif()
 include(${CPM_DOWNLOAD_LOCATION})
 
 find_package(Threads REQUIRED)
+find_package(OpenSSL REQUIRED)
 
 #spdlog
 CPMAddPackage(NAME spdlog GITHUB_REPOSITORY gabime/spdlog VERSION 1.9.2)
@@ -126,5 +127,9 @@ target_include_directories(NexusPool PUBLIC "${PROJECT_BINARY_DIR}")
 target_link_libraries(NexusPool pool asio)
 
 target_link_libraries(NexusPool Threads::Threads)
+
+target_link_libraries(NexusPool OpenSSL::SSL OpenSSL::Crypto)
+
+target_link_libraries(NexusPool OpenSSL::SSL OpenSSL::Crypto Threads::Threads)
 
 set_target_properties(NexusPool PROPERTIES VS_DEBUGGER_COMMAND_ARGUMENTS "-a F:/Work/Nexus Project/LLL-HPP/out/build/x64-Debug/api.conf -p pool.conf")

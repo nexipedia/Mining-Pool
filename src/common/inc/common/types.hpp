@@ -1,6 +1,7 @@
 #ifndef NEXUSPOOL_COMMON_TYPES_HPP
 #define NEXUSPOOL_COMMON_TYPES_HPP
 
+#include <cstdint>
 #include <string>
 
 namespace nexuspool

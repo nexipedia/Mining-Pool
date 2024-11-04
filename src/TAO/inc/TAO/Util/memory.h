@@ -11,6 +11,7 @@ ________________________________________________________________________________
 #define NEXUS_UTIL_INCLUDE_MEMORY_H
 
 #include <cstdint>
+#include <stdexcept>
 #include <vector>
 
 #include <LLC/aes/aes.h>

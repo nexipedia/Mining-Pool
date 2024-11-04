@@ -58,4 +58,3 @@ The above setup should only be used in a small scale Test Environment due its po
 
 ## Settings
 All local Settings are to be done in the .env file
-

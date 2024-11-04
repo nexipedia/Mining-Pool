@@ -1,6 +1,7 @@
 #ifndef NEXUSPOOL_PERSISTANCE_TYPES_HPP
 #define NEXUSPOOL_PERSISTANCE_TYPES_HPP
 
+#include <cstdint>
 #include <memory>
 #include <string>
 #include <map>
